@@ -1,0 +1,21 @@
+.carousel-img {
+  height: 630px;
+}
+
+img {
+  height: 300px;
+}
+
+.card {
+  height: 550px;
+}
+
+h2 {
+  font-family: 'Noto Serif', serif;
+}
+
+.title-for-cards {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+}
+/*# sourceMappingURL=style.css.map */
