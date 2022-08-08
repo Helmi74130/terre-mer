@@ -17,7 +17,7 @@
   <header >
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
       <div class="container-fluid fs-5">
-        <a class="navbar-brand fs-1 text-info"  href="#">Earth & Sea</a>
+        <a class="navbar-brand fs-1 text-success"  href="index.html">Earth & Sea</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,21 +27,15 @@
               <a class="nav-link active g-1 mx-2 ms-5" aria-current="page" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="#">J'agis</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nos Actions
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Mobilisation Citoyenne</a></li>
-                <li><a class="dropdown-item" href="#">Sensibilation</a></li>
-                <li><a class="dropdown-item" href="#">Education</a></li>
-              </ul>
+              <a class="nav-link mx-2" href="#about">
+                Qui sommes nous?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="#">
-                Qui sommes nous?</a>
+              <a class="nav-link mx-2" href="#action">Nos actions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="evenement.html">
+                Evenement</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-2" href="#">
@@ -50,10 +44,11 @@
           </ul>
         </div>
       </div>
+       <a class="p-2" href="#donnation"><button class="btn btn-warning" type="button">Faire un don <i class="fa-solid fa-hand-holding-heart"></i></button></a>
     </nav>
   </header>
 
-    <div>
+    <div class="carousse">
       <div id="carouselDark" class="carousel carousel-light slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
@@ -96,7 +91,7 @@
 
     
 
-    <div class="container-fluid text-center mt-5">
+    <div id="about" class="container-fluid text-center mt-5">
       <div class="row d-flex justify-content-around shadow me-5 ms-5">
         <h1 class="mt-5 mb-5">Preserver la nature Notre mission</h1>
         <div class="col-sm-10 col-md-6 d-flex flex-column mb-5">
@@ -115,7 +110,7 @@
       
     </div>
 
-    <h2 class="text-center mt-5 text-success title-for-cards">Chacun peut agir <br> pour la nature</h2>
+    <h2 id="action" class="text-center mt-5 text-success title-for-cards">Chacun peut agir <br> pour la nature</h2>
 
     <div class="container-fluid mt-5">
       <div class="row  g-3 mt-5 d-flex justify-content-around">
@@ -195,85 +190,147 @@
       </div>
     </div>
 
-    <h5 class="text-center mt-5 text-success title-for-cards">Faire un don</h5>
+    <h5 id="donnation" class="text-center mt-5 title-for-cards">Faire un don</h5>
 
-    <div class="container-fluid">
-      <div class="row g-3 mt-5 d-flex justify-content-around">
-        
-          <div class="col-md-5 col-lg-3 shadow-lg d-flex flex-column align-items-center mt-5 border-primary">
-            <h6 class="text-center fs-2 mt-2 bg-success w-100 rounded-top">Mon don</h6>
-            <div class="mt-5">
-              <button class="btn btn-outline-success me-5 btn-lg">10 <i class="fa-solid fa-euro-sign"></i></button>
-              <button class="btn btn-outline-success me-5 btn-lg">20 <i class="fa-solid fa-euro-sign"></i></button>
-              <button class="btn btn-outline-success me-5 btn-lg">50 <i class="fa-solid fa-euro-sign"></i></button>
-              <button class="btn btn-outline-success btn-lg">100 <i class="fa-solid fa-euro-sign"></i></button>
-            </div>
-            <div class="input-group mt-5 mb-5 w-75 d-flex align-items-center">
-              <label class="form-label me-2 text-success" for="donnation"><i class="fa-solid fa-euro-sign fa-xl"></i></label>
-              <input class="form-control" type="number" name="donnation" id="donnation" placeholder="Montant Libre">
-            </div>
-          </div>
+    <article class="container-fluid">
       
-        <div class="col-md-5 col-lg-4 shadow-lg d-flex flex-column align-items-center mt-5 border-primary rounded">
-          <h6 class="text-center fs-2 mt-2 bg-success w-100 rounded-top">Mon don</h6>
-          <div class="mt-5">
-            <button class="btn btn-outline-success me-5 btn-lg">10 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success me-5 btn-lg">20 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success me-5 btn-lg">50 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success btn-lg">100 <i class="fa-solid fa-euro-sign"></i></button>
+      <div class="row justify-content-around ">
+           
+          <div class="col-11 col-md-10 col-lg-5 col-xl-3 shadow-lg d-flex flex-column align-items-center mt-5">
+            <h6 class="text-center mt-3 fs-2 w-100 rounded-top text-success">Mon don</h6>
+            <div class="mt-3 row justify-content-center">
+              <button class="btn btn-outline-dark me-5 btn-lg col-4 mt-3">10 <i class="fa-solid fa-euro-sign"></i></button>
+              <button class="btn btn-outline-dark btn-lg col-4 mt-3">20 <i class="fa-solid fa-euro-sign"></i></button>
+              <button class="btn btn-outline-dark me-5 btn-lg col-4 mt-3">50 <i class="fa-solid fa-euro-sign"></i></button>
+              <button class="btn btn-outline-dark btn-lg col-4 mt-3">100 <i class="fa-solid fa-euro-sign"></i></button>
+            </div>
+              <input class="mt-5 form-control" type="number" name="donnation" id="donnation" placeholder="Montant Libre">
+            <div class="text-center mt-5 text-secondary">
+              <p>Vous pouvez bénéficier d'une réduction d'impôt sur le revenu correspondant à 75% de votre don, avec un plafond de 1000€. Au-delà, et dans la limite de 20% de vos revenus imposables, la déduction est encore de 66%..</p>
+            </div>
           </div>
-          <div class="input-group mt-5 mb-5 w-75 d-flex align-items-center">
-            <label class="form-label me-2 text-success" for="donnation"><i class="fa-solid fa-euro-sign fa-xl"></i></label>
-            <input class="form-control" type="number" name="donnation" id="donnation" placeholder="Montant Libre">
-          </div>
-        </div>
-      
-        <div class="col-md-5 col-lg-3 shadow-lg d-flex flex-column align-items-center mt-5 border-primary rounded">
-          <h6 class="text-center fs-2 mt-2 bg-success w-100 rounded-top">Mon don</h6>
-          <div class="mt-5">
-            <button class="btn btn-outline-success me-5 btn-lg">10 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success me-5 btn-lg">20 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success me-5 btn-lg">50 <i class="fa-solid fa-euro-sign"></i></button>
-            <button class="btn btn-outline-success btn-lg">100 <i class="fa-solid fa-euro-sign"></i></button>
-          </div>
-          <div class="input-group mt-5 mb-5 w-75 d-flex align-items-center">
-            <label class="form-label me-2 text-success" for="donnation"><i class="fa-solid fa-euro-sign fa-xl"></i></label>
-            <input class="form-control" type="number" name="donnation" id="donnation" placeholder="Montant Libre">
-          </div>
-        </div>
-      </div> 
-    </div>
-    
-    <footer class="bg-dark mt-5 container-fluid">
-      <div class="d-flex justify-content-around">
-        <div class="col-3 text-info mt-5 text-center mb-5">
-          <h3>Pour en savoir plus</h3>
-          <ul class="nav flex-column">
-            <li><a class="nav-link" href="#">J'agis</a></li>
-            <li><a class="nav-link" href="#">J'agis</a></li>
-            <li><a class="nav-link" href="#">J'agis</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-3 d-flex flex-column text-info mt-5 text-center align-items-center mb-5">
-          <h3>S'inscrire à notre newsletter</h3>
-          <p>Pour ne rien manquer, noubliez pas de vous inscrire à notre newsletter</p>
-          <div class="input-group w-75">
-            <input type="mail" class="form-control" placeholder="Adresse mail" aria-label="mail" aria-describedby="input-group-left">
-            <button type="button" class="btn btn-primary">Envoyer</button>
-          </div>
-        </div>
-  
-        <div class="col-3 text-info mt-5 text-center mb-5">
-          <h3>Pour en savoir plus</h3>
-          <ul>
-            <li>J'agis</li>
-            <li>J'agis</li>
-            <li>J'agis</li>
-          </ul>
+          
+          <div class="col-11 col-md-10 col-lg-6 col-xl-4 shadow-lg d-flex flex-column align-items-center mt-5 rounded">
+            <h6 class="text-center fs-2 w-100 rounded-top mt-3 text-success">Mes coordonnées</h6>
+              <form class="row mb-4 mt-3 d-flex justify-content-center ">
+                <div class="col-5">
+                  <div class="d-flex flex-column">
+                    <label class="form-label me-2" for="name">Nom *</label>
+                    <input type="text" id="name" class="form-control" placeholder="Votre Nom" />
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="d-flex flex-column">
+                    <label class="form-label me-2" for="firstname">Prénom *</label>
+                    <input type="text" id="firstname" class="form-control" placeholder="Votre Prénom" />
+                  </div>
+                </div>
+                <!-- Text input -->
+                <div class="col-10 mt-4">
+                  <div class="mb-4 d-flex flex-column">
+                    <label class="form-label" for="adress">Adresse</label>
+                    <input type="text" id="adress" class="form-control" placeholder="Votre adresse" />
+                  </div>
+                </div>
+                <!-- Email input -->
+                <div class="col-10">
+                  <div class="mb-4 d-flex flex-column">
+                    <label class="form-label me-2" for="mail">E-mail *</label>
+                    <input type="email" id="mail" class="form-control" placeholder="Votre e-mail" />
+                  </div>
+                </div>
+                <!-- Number input -->
+                <div class="col-10">
+                  <div class="mb-4 d-flex flex-column">
+                    <label class="form-label me-2" for="phone">Téléphone</label>
+                    <input type="number" id="phone" class="form-control" placeholder="Votre téléphone" />
+                  </div>
+                </div>
+              </form>
+        </div> 
+
+        <div class="col-11 col-md-10 col-lg-10 col-xl-4 shadow-lg d-flex flex-column align-items-center mt-5 rounded">
+          <h6 class="text-center fs-2 w-100 rounded-top mt-3 text-success">Mon Règlement</h6>
+          <form class="row mb-4 mt-3 d-flex justify-content-center">
+           <p class="text-center text-secondary"><i class="fas fa-lock fa-2xs"></i> <small>Vous êtes sur un serveur de paiement sécurisé par SSL</small></p>
+            <!-- Text input -->
+            <div class="col-10">
+              <div class="mb-4 d-flex flex-column">
+                <label class="form-label" for="cardNumber"><i class="far fa-credit-card"></i> Numéro de carte</label>
+                <input type="text" id="cardNumber" class="form-control" placeholder="0000 0000 0000 0000" />
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="d-flex flex-column">
+                <label class="form-label me-2" for="expDate"><i class="fas fa-calendar-alt"></i> Date d'exp.</label>
+                <input type="text" id="expDate" class="form-control" placeholder="00/00" />
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="d-flex flex-column">
+                <label class="form-label me-2" for="cvv"><i class="fas fa-clipboard-check"></i> CVV</label>
+                <input type="text" id="cvv" class="form-control" placeholder="CVV" />
+              </div>
+            </div>
+            <!-- Number input -->
+            <div class="col-10 mt-4">
+              <div class="mb-2 d-flex flex-column">
+                <label class="form-label me-2" for="nameTitular">Nom du titulaire de la carte</label>
+                <input type="text" id="nameTitular" class="form-control" />
+              </div>
+              <button class="btn btn-success" type="submit">Paiement</button>
+            </div>
+            <div class="d-flex mt-2 text-secondary">
+              <input class="m-3" type="checkbox" name="saveCb" id="saveCb">
+              <label for="saveCb"><small>Mémoriser votre carte bancaire pour votre prochaine commande.</small></label>
+            </div>
+          </form>
         </div>
       </div>
-      
+    </article>
+    
+    <footer class="bg-dark mt-5 container-fluid">
+        <div class="row d-flex justify-content-around">
+          <div class="col-10 col-md-4 col-lg-3 text-success mt-5 text-center mb-5">
+            <h3>Pour en savoir plus</h3>
+            <ul class="nav flex-column">
+              <li><a class="nav-link text-light" href="#">Devenir bénévoles</a></li>
+              <li><a class="nav-link text-light" href="#">Ou nous trouver?</a></li>
+              <li><a class="nav-link text-light" href="#">Actualités</a></li>
+            </ul>
+          </div>
+        
+          <div class="col-10 col-md-6 col-lg-5 d-flex flex-column text-success mt-5 text-center align-items-center mb-5">
+            <h3>S'inscrire à notre newsletter</h3>
+            <p class="text-light">Pour ne rien manquer, noubliez pas de vous inscrire à notre newsletter</p>
+            <div class="input-group w-75">
+              <input type="mail" class="form-control" placeholder="Adresse mail" aria-label="mail" aria-describedby="input-group-left">
+              <button type="button" class="btn btn-success">Envoyer</button>
+            </div>
+          </div>
+        
+            <div class="col-10 col-md-6 col-lg-3 text-success mt-5 text-center mb-5">
+              <h3>Partenariat</h3>
+              <ul class="nav flex-column">
+                <li><a class="nav-link text-light" href="#">Comment s'engager ?</a></li>
+                <li><a class="nav-link text-light" href="#">Nos partenaires</a></li>
+                <li><a class="nav-link text-light" href="#">F.A.Q</a></li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-around">
+              <div>
+                <p class="text-light text-center">© 2022 Earth & Sea | <a class="text-light" href="#">Cookies</a> | <a class="text-light" href="#">Mentions légales</a></p>
+              </div>
+              <div>
+                <a class="text-light me-3" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a class="text-light me-3" href="https://fr-fr.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a class="text-light me-3" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                <a class="text-light me-3" href="https://www.pinterest.fr" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+                <a class="text-light me-3" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+              </div>
+            </div>
+
+        </div>
     </footer>
     
   
