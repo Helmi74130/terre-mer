@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACE,KADG,AACF,MAAM,CAAA;EACL,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,GAAG;CACb",
-    "sources": [
-        "style-evenement.scss"
-    ],
-    "names": [],
-    "file": "style-evenement.css"
-}
