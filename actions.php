@@ -18,28 +18,8 @@
 
 <body>
   <!-- Header Start -->
-	<header>
-		<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-			<div class="container-fluid fs-5"> <a class="navbar-brand fs-1 text-success" href="index.html">Earth & Sea</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-				<div class="collapse navbar-collapse show" id="navbarWithDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item"> <a class="nav-link g-1 mx-2 ms-5" aria-current="page" href="index.html">Accueil</a> </li>
-						<li class="nav-item"> <a class="nav-link mx-2" href="about.html">
-                Qui sommes nous?</a> </li>
-						<li class="nav-item"> <a class="nav-link active mx-2" href="actions.html">Nos actions</a> </li>
-						<li class="nav-item"> <a class="nav-link mx-2" href="evenement.html">
-                Evénement</a> </li>
-						<li class="nav-item"> <a class="nav-link mx-2" href="contact.html">
-                Contact</a> </li>
-					</ul>
-				</div>
-			</div>
-			<a class="p-2" href="donnation.html">
-				<button class="btn btn-warning" type="button">Faire un don <i class="fa-solid fa-hand-holding-heart"></i></button>
-			</a>
-		</nav>
-	</header>
+	<?php require_once 'component/header.php'; ?>
+	
   <!-- Main Start -->
 	<h1 id="action" class="text-center mt-5 title-for-cards"><strong><i>Chacun peut agir  pour la nature</i></strong></h1>
 	<main class="container-fluid mt-5">
@@ -100,41 +80,10 @@
 			</div>
 		</div>
 	</main>
+
   <!-- Footer Start -->
-	<footer class="bg-dark mt-5 container-fluid">
-		<div class="row d-flex justify-content-around">
-			<nav class="col-10 col-md-4 col-lg-3 text-success mt-5 text-center mb-5">
-				<h3>Pour en savoir plus</h3>
-				<ul class="nav flex-column">
-					<li><a class="nav-link text-light" href="#">Devenir bénévoles</a></li>
-					<li><a class="nav-link text-light" href="#">Ou nous trouver?</a></li>
-					<li><a class="nav-link text-light" href="#">Actualités</a></li>
-				</ul>
-			</nav>
-			<div class="col-10 col-md-6 col-lg-5 d-flex flex-column text-success mt-5 text-center align-items-center mb-5">
-				<h3>S'inscrire à notre newsletter</h3>
-				<p class="text-light">Pour ne rien manquer, noubliez pas de vous inscrire à notre newsletter</p>
-				<div class="input-group w-75">
-					<input type="mail" class="form-control" placeholder="Adresse mail" aria-label="mail" aria-describedby="input-group-left">
-					<button type="button" class="btn btn-success">Envoyer</button>
-				</div>
-			</div>
-			<nav class="col-10 col-md-6 col-lg-3 text-success mt-5 text-center mb-5">
-				<h3>Partenariat</h3>
-				<ul class="nav flex-column">
-					<li><a class="nav-link text-light" href="#">Comment s'engager ?</a></li>
-					<li><a class="nav-link text-light" href="#">Nos partenaires</a></li>
-					<li><a class="nav-link text-light" href="#">F.A.Q</a></li>
-				</ul>
-			</nav>
-			<div class="d-flex justify-content-around">
-				<div>
-					<p class="text-light text-center">© 2022 Earth & Sea | <a class="text-light" href="#">Cookies</a> | <a class="text-light" href="#">Mentions légales</a></p>
-				</div>
-				<nav> <a class="text-light me-3" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a> <a class="text-light me-3" href="https://fr-fr.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a> <a class="text-light me-3" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a> <a class="text-light me-3" href="https://www.pinterest.fr" target="_blank"><i class="fa-brands fa-pinterest fa-xl"></i></a> <a class="text-light me-3" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a> </nav>
-			</div>
-		</div>
-	</footer>
+	<?php require_once 'component/footer.php'; ?>
+
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
